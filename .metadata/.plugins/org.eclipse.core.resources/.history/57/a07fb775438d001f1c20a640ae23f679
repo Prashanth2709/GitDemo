@@ -1,0 +1,24 @@
+@tag
+Feature: Application login page
+
+@SmokeTest
+Scenario: User page default login
+
+     Given User is on login page
+     When User login into application
+		 Then Home page is displayed  
+		 And Product are displayed
+@RegressionTest
+Scenario: Login to Gmail
+     Given I open the Gmail login page
+     When I enter the username and click next
+     Then I should see the Gmail inbox
+
+
+
+
+
+
+
+
+
